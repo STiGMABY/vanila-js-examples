@@ -1,0 +1,17 @@
+// const array = [1, 2, 3, 4, 5]
+
+// const multBy = (arr, n) => {
+//     return arr.map((iterator) => {
+//         console.log(iterator * n)
+//     })
+// }
+//multBy(array, 5)
+
+// Array.prototype.multByWithCall = function(n){
+//     // console.log(this)
+//     return this.map(iter => {
+//         console.log(iter * n)
+//     })
+// }
+
+// array.multByWithCall(2)

@@ -1,0 +1,1 @@
+className={cx(style.style1, {[style.style2]: isOpen})}
