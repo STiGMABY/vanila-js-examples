@@ -1,3 +1,5 @@
+// https://doka.guide/js/array-reduce/
+
 myArray = [[1, 2], [3, 4], [5, 6]]
 
 const flatten = myArray.reduce((acu, elem) => {
@@ -89,3 +91,22 @@ countriesAndCarriers.map(([carrier, country]) => {
   console.log(carrier)
   console.log(country)
 })
+
+// ---------------------
+
+const newArr3 = ['Joe', 'Danny', 'Andrew']
+
+newArr3.reduce((accumulator, currentVal, index, array) => {
+  return {
+    ...accumulator,
+    [index]: currentVal
+  }
+}, {})
+
+
+const arr = ['Nick', 'Mike']
+const objFromArr = arr.reduce((acc, elem, index) => {
+  acc[index] = elem
+  return acc
+}, {})
+console.log(objFromArr)

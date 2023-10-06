@@ -49,6 +49,3 @@ for (let row = 0; row < table.length; row++) {
 console.log(table[4][4])
 
 //------------------------ SORT
-const rand = [5, 44, 2, 89, 0]
-const randResult = rand.sort((a, b) => a - b)
-console.log(randResult) //[ 0, 2, 5, 44, 89 ]

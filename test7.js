@@ -1,8 +1,3 @@
-// const foo = [1, 2, 3, 4]
-// const bar = JSON.parse(JSON.stringify(foo))
-// bar.push(5)
-// console.log(bar);
-
 
 // console.log(undefined == 0); //false
 // console.log(undefined === 0); //false
@@ -17,7 +12,7 @@
 // setTimeout(function () {
 //     console.log('setTimeout')
 // }, 0)
-
+//
 // Promise.resolve()
 //     .then(function () { console.log('promise 1') })
 //     .then(function () { console.log('promise 2') })
@@ -35,9 +30,9 @@
 //     this.name = name
 // }
 // Dog.prototype.bark = function() {
-//     console.log(this.name + 'says woof');
+//     console.log(this.name + ' says woof');
 // }
-
+//
 // let fido = new Dog('Fido')
 // console.log(fido.bark())
 
