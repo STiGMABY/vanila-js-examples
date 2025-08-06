@@ -6,13 +6,13 @@ let vegetables = ['Капуста', 'Репа', 'Редиска', 'Морков�
 function arrayToString(arr) {
 
   //1:
-  //return arr.join(',')
+  // return arr.join(',')
 
   //2:
-  //return arr.toString()
+  // return arr.toString()
   
   //3:
-  return ''.concat(arr)
+  // return ''.concat(arr)
 }
 
 const res = arrayToString(vegetables)

@@ -47,3 +47,21 @@ function myOwnBind(ctx, fn) {
 //Не забываем вызвать bind
 myOwnBind(catOne, catInfo)()
 myOwnBind(catTwo, catInfo)()
+
+//-------------------------
+// Given an integer n, return a counter function. This counter function initially
+// returns n and then returns 1 more than the previous value every subsequent time it
+// is called (n, n + 1, n + 2, etc).
+
+let createCounter = function (n) {
+    return function (){
+        console.log(n)
+        n++
+    }
+}
+
+const counter = createCounter(-2)
+counter() //-2
+counter() // -1
+counter() // 0
+counter() // 1

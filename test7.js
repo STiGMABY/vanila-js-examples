@@ -75,12 +75,23 @@
 // console.log('obj2 --> ', obj2)
 
 
-const bikes = [
-    { bike: 'Honda', color: 'orange' },
-    { bike: 'Suzuki', color: 'blue' },
-    { bike: 'Kawasaki', color: 'green' },
-    { bike: 'Yamaha', color: 'red' },
-]
+// const bikes = [
+//     { bike: 'Honda', color: 'orange' },
+//     { bike: 'Suzuki', color: 'blue' },
+//     { bike: 'Kawasaki', color: 'green' },
+//     { bike: 'Yamaha', color: 'red' },
+// ]
+//
+// let bikesCopy = Array.from(bikes, ({ bike }) => bike)
+// console.log(bikesCopy) //[ 'Honda', 'Suzuki', 'Kawasaki', 'Yamaha' ]
+//
+// const newArrWithBikes = bikesCopy.map(item => `copied ${item}`)
+// console.log(newArrWithBikes) // [ 'copied Honda', 'copied Suzuki', 'copied Kawasaki', 'copied Yamaha' ]
 
-let bikesCopy = Array.from(bikes, ({ bike }) => bike)
-console.log(bikesCopy) //[ 'Honda', 'Suzuki', 'Kawasaki', 'Yamaha' ]
+const object1 = {
+    a: 'somestring',
+    b: 42,
+};
+
+const data = Object.fromEntries(object1)
+console.log(data)

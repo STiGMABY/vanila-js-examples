@@ -4,13 +4,13 @@ let vegetables = ['Капуста', 'Репа', 'Редиска', 'Морков�
 function arrayClone(arr) {
 
   //1:
-  //return arr.slice(0)
+  // return arr.slice(0)
 
   //2:
-  //return arr.map(item => item) //map не изменяет исходный массив, а возвращает новый
+  // return arr.map(item => item) //map не изменяет исходный массив, а возвращает новый
 
   //3:
-  //return [...arr]
+  // return [...arr]
 }
 
 let clonedVegetables = arrayClone(vegetables)

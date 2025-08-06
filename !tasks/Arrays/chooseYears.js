@@ -14,4 +14,4 @@ function chooseYears(start, end) {
   return years
 }
 
-console.log(chooseYears(1999, 2018)) // [2000,2004,2008,2012,2016]
+console.log(chooseYears(1999, 2030)) // [2000,2004,2008,2012,2016]

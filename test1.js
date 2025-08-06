@@ -98,21 +98,31 @@
 // const myPromise  = new Promise((res, rej) => {
 //   res({
 //     'AC/DC': 'Highway To Hell',
-//     'Metallica': 'Unforgiven'
+ //     'Metallica': 'Unforgiven'
 //   })
 // })
 // myPromise.then(data => console.log(data))
 //----------------------------
 
-const showMonth = (days) => {
-  const currentMonth = {
-    31: 'Jan',
-    28: 'Feb',
-    30: 'Mar',
-  }
-  return currentMonth[days] || 'Unknown';
-}
+// const showMonth = (days) => {
+//   const currentMonth = {
+//     31: 'Jan',
+//     28: 'Feb',
+//     30: 'Mar',
+//   }
+//   return currentMonth[days] || 'Unknown';
+// }
+//
+// const monthFor28Days = showMonth(28);
+// console.log(monthFor28Days);
 
-const monthFor28Days = showMonth(28);
-console.log(monthFor28Days);
+
+// const nestedArr = [
+//     1,2,
+//     [2,3,4,4567],
+//     [[56],[6758]]
+// ]
+//
+// const flatted = nestedArr.flat(Number.POSITIVE_INFINITY)
+// console.log(flatted)
 
