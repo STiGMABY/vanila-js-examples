@@ -24,3 +24,36 @@ function binarySearch(array, item) {
     return position
 }
 console.log(binarySearch(array, 3))
+// ----------------------
+
+const fooBar = (num) => {
+    for (let i = 1; i <= num; i++) {
+        if (i % 3 === 0 && i % 5 === 0) console.log('foobar');
+        else if (i % 3 === 0) console.log('foo');
+        else if (i % 5 === 0) console.log('bar');
+        else console.log(i);
+    }
+};
+
+const fooBar2 = (num) => {
+    for (let i = 1; i <= num; i++) {
+        switch (true) {
+            case i % 3 === 0 && i % 5 === 0:
+                console.log('foobar');
+                break;
+            case i % 3 === 0:
+                console.log('foo');
+                break;
+            case i % 5 === 0:
+                console.log('bar');
+                break;
+            default:
+                console.log(i);
+        }
+    }
+};
+
+fooBar(15);
+
+
+fooBar(15);

@@ -65,3 +65,14 @@ counter() //-2
 counter() // -1
 counter() // 0
 counter() // 1
+// -------------------------
+const a  = 5;
+
+function myFn(){
+    function innerFn(){
+        console.log(a)
+    }
+    innerFn()
+}
+
+myFn() // closure, inner scoupe

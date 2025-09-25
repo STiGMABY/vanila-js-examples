@@ -1,3 +1,11 @@
+// const myPromise  = new Promise((res, rej) => {
+//   res({
+//     'AC/DC': 'Highway To Hell',
+//     'Metallica': 'Unforgiven'
+//   })
+// })
+// myPromise.then(data => console.log(data))
+//----------------------------
 //Пример промиса 1:
 const promise = new Promise((resolve, reject) => {
     //throw new Error('user Error')
@@ -140,3 +148,33 @@ Promise.all([
     myTimer(1),
     Promise.resolve(console.log(`HTTP code 200`))
 ])
+// -----------------------------
+
+const delay = (callBack, ms) => {
+    return new Promise((res) => {
+        setTimeout(() => {
+            res(callBack())
+        }, ms)
+    }).then(result => console.log(result))
+
+}
+
+delay(() => 5 + 52, 2000)
+// ---------------------------
+
+// console.log('script start')
+// setTimeout(function () {
+//     console.log('setTimeout')
+// }, 0)
+//
+// Promise.resolve()
+//     .then(function () { console.log('promise 1') })
+//     .then(function () { console.log('promise 2') })
+// console.log('script end')
+
+// script start
+// script end
+// promise 1
+// promise 2
+// setTimeout
+// ---------------------------------

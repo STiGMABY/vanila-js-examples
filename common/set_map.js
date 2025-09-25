@@ -55,3 +55,9 @@ users.forEach(user => console.log(user));
 // WeackMap & WeackSet - не препятсвуют зборўіку муссора удолять своі элементы,
 // т.е. еслі некій об'ект прісутсвует только в WeackMap или WeackSet он спокойно
 // удаляется из памяти
+// -------------------
+
+function uniteUnique()  {
+    return [...new Set([...arguments].flat())]
+}
+console.log(uniteUnique([1, 2, 3], [4, 1, 5], [6, 7, 8, 5]))

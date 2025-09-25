@@ -110,3 +110,34 @@ const objFromArr = arr.reduce((acc, elem, index) => {
   return acc
 }, {})
 console.log(objFromArr)
+// -----------------------
+
+let numbers = [10, 5, 100, 28977, 1000, 2065];
+const maxVal = numbers.reduce((acc, val) => acc > val ?acc : val, numbers[0]);
+console.log(maxVal);
+
+// -------------------------
+let keyValuePairs = [['key1','value1'], ['key2','value2'], ['key3','value3']]
+
+const flattenKeyValuePairs = keyValuePairs.reduce((acc,[key, value] ) => {
+    return {...acc,[key]: value};
+})
+console.log(flattenKeyValuePairs);
+// ----------------------
+
+const sumDigits = (digits) => {
+    const res = Math.abs(digits.toString()
+        .split('')
+        .reduce((acc , curr) => Number(acc) + Number(curr), 0))
+    console.log(res)
+}
+sumDigits(53)
+// --------------------------
+// const indexOfCapitals = (str) => {
+//     //2:
+//     return str.split('').reduce((result, letter, index) => {
+//         if (letter === letter.toUpperCase()) { result.push(index) }
+//         return result
+//     }, [])
+// }
+// console.log(indexOfCapitals('CodEWaRs')); //0,3,4,6

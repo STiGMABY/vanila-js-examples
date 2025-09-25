@@ -1,16 +1,10 @@
-const companies = {
-    IBM: 50,
-    Microsoft: 20,
-    Intel: 45,
+const companies2 = {
+    exadel: 4,
+    godel: 10
 }
-
-//когда мы не знаем имя добаляемого свойства
-function addStock(objProperty, value) {
-    companies[objProperty] = value
-}
-addStock('Apple', 10)
-
-console.log(companies); //{ IBM: 50, Microsoft: 20, Intel: 45, Apple: 10 }
+const addCompanyRating = (obj, company, rating) => obj[company] = rating
+addCompanyRating(companies2, `intex`, 5)
+console.log(companies2)
 // -----------------------------------------
 
 //ОБЪЕДИНЕНИЕ
@@ -67,3 +61,15 @@ for (const key in kitty) {
 }
 
 kitty.age //2
+// ------------------------
+// const showMonth = (days) => {
+//   const currentMonth = {
+//     31: 'Jan',
+//     28: 'Feb',
+//     30: 'Mar',
+//   }
+//   return currentMonth[days] || 'Unknown';
+// }
+//
+// const monthFor28Days = showMonth(28);
+// console.log(monthFor28Days);

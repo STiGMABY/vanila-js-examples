@@ -36,3 +36,17 @@ const checkUser = ({ name, age, isProgrammer }) => {
 checkUser(user)
 //--------------------------
 
+// const bikes = [
+//     { bike: 'Honda', color: 'orange' },
+//     { bike: 'Suzuki', color: 'blue' },
+//     { bike: 'Kawasaki', color: 'green' },
+//     { bike: 'Yamaha', color: 'red' },
+// ]
+//
+// let bikesCopy = Array.from(bikes, ({ bike }) => bike)
+// console.log(bikesCopy) //[ 'Honda', 'Suzuki', 'Kawasaki', 'Yamaha' ]
+//
+// const newArrWithBikes = bikesCopy.map(item => `copied ${item}`)
+// console.log(newArrWithBikes) // [ 'copied Honda', 'copied Suzuki', 'copied Kawasaki', 'copied Yamaha' ]
+// ------------------------------
+

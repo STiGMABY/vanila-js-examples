@@ -1,0 +1,7 @@
+// console.log(undefined == 0); //false
+// console.log(undefined === 0); //false
+// console.log(undefined >= 0); //false
+// console.log(null >= 0); //true
+// console.log(false == 0); // true
+// console.log(false === 0); // false
+
